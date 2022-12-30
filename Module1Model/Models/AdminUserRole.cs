@@ -5,13 +5,13 @@ namespace Module1Model.Models
     public class AdminUserRole
     {
         [Key]
-        public int adminUserRoleId { get; set; }
+        public int AdminUserRoleId { get; set; }
 
         [Required]
-        public string roleName { get; set; }
+        public string RoleName { get; set; }
 
-        public int? rolePower { get; set; }
+        public int? RolePower { get; set; }
 
-        public List<AdminUser>? adminUsers { get; set; }
+        public List<AdminUser>? AdminUsers { get; set; }
     }
 }

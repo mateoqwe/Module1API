@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Module1DataAccess.Data;
+using Module1DataAccess.Data.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Add services to the container.
+builder.Services.AddTransient<AdminUserRoleService>();
 
 // Connect to DB
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Module1DataAccess\Module1DataAccess.csproj" />
     <ProjectReference Include="..\Module1Model\Module1Model.csproj" />
   </ItemGroup>
