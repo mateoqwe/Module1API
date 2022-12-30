@@ -8,12 +8,12 @@ namespace Module1Model.Models
 {
     public class AdminUserFromView
     {
-        public int adminUserId { get; set; }
+        public int AdminUserId { get; set; }
 
-        public string userName { get; set; }
+        public string UserName { get; set; }
 
-        public int adminUserRoleId { get; set; }
+        public int AdminUserRoleId { get; set; }
 
-        public string roleName { get; set; }
+        public string RoleName { get; set; }
     }
 }

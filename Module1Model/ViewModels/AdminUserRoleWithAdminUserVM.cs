@@ -5,10 +5,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Module1Model.ViewModels
 {
-    public class AdminUserRoleVM
+    public class AdminUserRoleWithAdminUserVM
     {
         public string RoleName { get; set; }
 
         public int? RolePower { get; set; }
+
+        public List<string> AdminUserNames { get; set; }
     }
 }

@@ -5,9 +5,9 @@ namespace Module1Model.Models
     public class Screen
     {
         [Key]
-        public int screenId { get; set; }
+        public int ScreenId { get; set; }
 
         [Required]
-        public string screenName { get; set; }
+        public string ScreenName { get; set; }
     }
 }

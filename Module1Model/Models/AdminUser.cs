@@ -6,17 +6,17 @@ namespace Module1Model.Models
     public class AdminUser
     {
         [Key]
-        public int adminUserId { get; set; }
+        public int AdminUserId { get; set; }
 
         [Required]
-        public string userName { get; set; }
+        public string UserName { get; set; }
 
         [Required]
-        public string password { get; set; }
+        public string Password { get; set; }
 
         [ForeignKey("AdminUserRole")]
-        public int adminUserRoleId { get; set; }
+        public int AdminUserRoleId { get; set; }
 
-        public AdminUserRole adminUserRole { get; set; }
+        public AdminUserRole AdminUserRole { get; set; }
     }
 }
