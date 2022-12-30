@@ -15,6 +15,13 @@ namespace Module1API.Controllers
             _adminUserRoleService = adminUserRoleService;
         }
 
+        [HttpGet("get-all-admin-user-role")]
+        public IActionResult GetAllAdminUserRole()
+        {
+            var _allAdminUserRole = _adminUserRoleService.GetAllAdminUserRole();
+            return Ok(_allAdminUserRole);
+        }
+
         [HttpGet("get-admin-user-role-by-id/{id}")]
         public IActionResult GetAdminUserRoleById(int id)
         {

@@ -23,6 +23,10 @@ namespace Module1DataAccess.Data.Services
             _context.AdminUserRoles.Add(_adminUserRole);
             _context.SaveChanges();
         }
+        public List<AdminUserRole> GetAllAdminUserRole()
+        {
+            return _context.AdminUserRoles.ToList();
+        }
 
         public AdminUserRoleWithAdminUserVM GetAdminUserRoleById(int id)
         {

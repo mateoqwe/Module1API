@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module1Model.Models
+namespace Module1Model.ViewModels
 {
     public class AdminUserFromView
     {

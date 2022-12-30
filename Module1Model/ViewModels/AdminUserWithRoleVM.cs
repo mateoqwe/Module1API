@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Module1Model.ViewModels
 {
-    public class AdminUserVM
+    public class AdminUserWithRoleVM
     {
         public string UserName { get; set; }
 
         public string Password { get; set; }
 
-        public int AdminUserRoleId { get; set; }
+        public string AdminUserRoleName { get; set; }
     }
 }

@@ -9,6 +9,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 // Add services to the container.
 builder.Services.AddTransient<AdminUserRoleService>();
+builder.Services.AddTransient<AdminUserService>();
 
 // Connect to DB
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
